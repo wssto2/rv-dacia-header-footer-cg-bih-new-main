@@ -1,15 +1,15 @@
 {
-  "name": "@wssto2/rv-dacia-header-footer-cro-slo-srb-main",
-  "version": "1.0.2",
+  "name": "@wssto2/rv-dacia-header-footer-cg-bih-new-main",
+  "version": "1.0.0",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wssto2/rv-dacia-header-footer-cro-slo-srb-main.git"
+    "url": "git+https://github.com/wssto2/rv-dacia-header-footer-cg-bih-new-main.git"
   },
   "bugs": {
-    "url": "https://github.com/wssto2/rv-dacia-header-footer-cro-slo-srb-main/issues"
+    "url": "https://github.com/wssto2/rv-dacia-header-footer-cg-bih-new-main/issues"
   },
-  "homepage": "https://github.com/wssto2/rv-dacia-header-footer-cro-slo-srb-main",
+  "homepage": "https://github.com/wssto2/rv-dacia-header-footer-cg-bih-new-main",
   "publishConfig": {
     "access": "public"
   },
