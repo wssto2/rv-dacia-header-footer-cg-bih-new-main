@@ -23,7 +23,7 @@
                 <header class="module-container">
                     <div class="header-part brand-logo">
                         <a href="/" title="Dacia">
-                            <img :src="@/assets/images/dacia-logo.svg" alt="Dacia Logo" />
+                            <img :src="image" alt="Dacia Logo" />
                         </a>
                     </div>
 
@@ -126,6 +126,7 @@
         },
         data() {
             return {
+                image: require('@/assets/images/dacia-logo.svg'),
                 expanded: false,
                 mobileDropdown: false,
                 activeCarCategory: null,
