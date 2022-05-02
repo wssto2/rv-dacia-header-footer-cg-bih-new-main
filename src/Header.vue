@@ -23,7 +23,7 @@
                 <header class="module-container">
                     <div class="header-part brand-logo">
                         <a href="/" title="Dacia">
-                            <img src="@/assets/images/dacia-logo.svg" alt="Dacia Logo" />
+                            <img :src="@/assets/images/dacia-logo.svg" alt="Dacia Logo" />
                         </a>
                     </div>
 
