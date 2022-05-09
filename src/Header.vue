@@ -23,7 +23,7 @@
                 <header class="module-container">
                     <div class="header-part brand-logo">
                         <a href="/" title="Dacia">
-                            <img :src="image" alt="Dacia Logo" />
+                            <img src="https://unpkg.com/@wssto2/rv-dacia-header-footer-cg-bih-new-main/dist/img/dacia-logo.svg" alt="Dacia Logo" />
                         </a>
                     </div>
 
