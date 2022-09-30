@@ -3,13 +3,13 @@
         <div id="helios-footer" class="helios-footer helios-special-elements">
             <div class="page-footer">
                 <footer>
-                    <div class="module-container">
+                    <div class="module-container" style="padding-bottom:70px;">
                         <div class="container-fluid">
                             <ul v-if="mainFooter != 0" class="row footer-menu" data-fplugin="expand-content" data-fres="[&quot;xs&quot;]" data-fopts="{&quot;expandTriggerClass&quot;: &quot;open&quot;, &quot;collapsedDisplay&quot; : &quot;&quot;, &quot;grouped&quot; : &quot;true&quot;, &quot;collapsedDisplay&quot; : &quot;&quot;}">
-                                <li v-for="(item, itemIndex) in mainFooter" :key="itemIndex" class="col-xs-12 col-sm-4 col-md-3 expand-box" @click.prevent="toggle(itemIndex)">
-                                    <div :class="['menu-group-name','trigger', {'open': isVisible(itemIndex)}]" data-phf-ico-active-after="" data-phf-ico-after="">{{ item.title }}</div>
+                                <li v-for="(item, itemIndex) in mainFooter" :key="itemIndex" class="col-xs-12 col-sm-4 col-md-3 expand-box">
+                                    <div v-if="item.title != 'no-show'" :class="['menu-group-name','trigger', {'open': isVisible(itemIndex)}]" data-phf-ico-active-after="" data-phf-ico-after="" @click.prevent="toggle(itemIndex)">{{ item.title }}</div>
                                     
-                                    <ul :class="['footer-menu', 'container-show', {'displayBlock' :  isVisible(itemIndex)}]">
+                                    <ul v-if="item.title != 'no-show'" :class="['footer-menu', 'container-show', {'displayBlock' :  isVisible(itemIndex)}]">
 
                                         <li v-for="(child, childIndex) in item.children" :key="childIndex">
                                             <a :title="child.title" :href="child.url"><span>{{ child.title }}</span></a>
@@ -29,9 +29,6 @@
                                 
                             </ul>
                         </div>
-                    </div>
-                    <div class="black-separator visible-md visible-lg" v-if="passion != 0">
-                        <p>{{passion}}</p>
                     </div>
                     <div class="bottom-menu">
                         <div class="module-container row">
@@ -155,7 +152,7 @@
         font-family:Pictos;
         font-style: normal;
         font-weight: 400;
-        src:url(./assets/fonts/PictosCompleteXXI-Regular.woff) format("woff")
+        src:url(./assets/fonts/PictosComplete-Regular.woff) format("woff")
     }
     * {
         font-family: Read-Regular;

@@ -23,7 +23,7 @@
                 <header class="module-container">
                     <div class="header-part brand-logo">
                         <a href="/" title="Dacia">
-                            <img :src="image" alt="Dacia Logo" />
+                            <img src="https://unpkg.com/@wssto2/rv-dacia-header-footer-cg-bih-new-main/dist/img/dacia-logo.svg" alt="Dacia Logo" />
                         </a>
                     </div>
 
@@ -78,7 +78,7 @@
                 <div class="nav-mask"></div>
             </div>
             <div :class="['menu-popup', { 'is-active' : (Number.isInteger(activeCarCategory)) }]" style="min-height: 938px;">
-                <div class="menu-popup_close" data-phf-ico-before="" data-phf-ico-active-before="">Zatvori</div>
+                <div class="menu-popup_close" data-phf-ico-before="" data-phf-ico-active-before=""></div>
                 <div class="menu-popup_inner" v-if="mainNavFirst != 0">
 
                     <div v-show="activeCarCategory === carPickerIndex" v-for="(carPicker, carPickerIndex) in mainNavFirst" :key="carPickerIndex" class="menu-popup_vehicles-container  is-active" data-popup="595468798" style="left: 390px;">
@@ -204,6 +204,6 @@
         font-family:Pictos;
         font-style: normal;
         font-weight: 400;
-        src:url(./assets/fonts/PictosCompleteXXI-Regular.woff) format("woff")
+        src:url(./assets/fonts/PictosComplete-Regular.woff) format("woff")
     }
 </style>
