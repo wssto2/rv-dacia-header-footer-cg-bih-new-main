@@ -3616,4 +3616,8 @@
 
 
 body, html{overflow-x: hidden;}
-
+ 
+.plugin-helios-header-footer .helios-special-elements#helios-header .page-header--helios .menu > ul li.expand-box .dropdown, .plugin-helios-header-footer .helios-special-elements#helios-header .page-header--helios .menu > ul li.no-expand .dropdown,
+.plugin-helios-header-footer .helios-special-elements#helios-header .page-header--helios .menu > ul li.expand-box .dropdown.active span, .plugin-helios-header-footer .helios-special-elements#helios-header .page-header--helios .menu > ul li.expand-box .dropdown:hover span {
+  font-weight: normal;
+}
