@@ -1356,12 +1356,12 @@
  .plugin-helios-header-footer .helios-special-elements .fixed-bottom-nav .container--content{display:none;position:absolute;height:36px;bottom:0;width:100%;border-top:1px solid #000;border-left:1px solid #000;border-right:1px solid #000}
  .plugin-helios-header-footer .helios-special-elements .fixed-bottom-nav .container--show{position:absolute;height:36px;bottom:0;width:100%;border:none;background-color:transparent;display:none}
  .plugin-helios-header-footer .helios-special-elements .menu-popup{position:relative;opacity:0}
- @media (max-width:959px){.plugin-helios-header-footer .helios-special-elements .menu-popup{position:absolute;top:70px;right:0;left:0;z-index:101;-webkit-transform:translateX(102%);-ms-transform:translateX(102%);transform:translateX(102%);-webkit-transition:.2s cubic-bezier(.09,.96,.48,.9);transition:.2s cubic-bezier(.09,.96,.48,.9)}
+ @media (max-width:959px){.plugin-helios-header-footer .helios-special-elements .menu-popup{position:absolute;top:70px;right:0;left:0;z-index:101;min-height:0 !important;width:0;-webkit-transform:translateX(102%);-ms-transform:translateX(102%);transform:translateX(102%);-webkit-transition:.2s cubic-bezier(.09,.96,.48,.9);transition:.2s cubic-bezier(.09,.96,.48,.9)}
 }
  @media (min-width:960px){.plugin-helios-header-footer .helios-special-elements .menu-popup{min-height:inherit!important}
 }
  .plugin-helios-header-footer .helios-special-elements .menu-popup.is-active{opacity:1}
- @media (max-width:959px){.plugin-helios-header-footer .helios-special-elements .menu-popup.is-active{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);-webkit-transition:all .5s;transition:all .5s}
+ @media (max-width:959px){.plugin-helios-header-footer .helios-special-elements .menu-popup.is-active{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);-webkit-transition-property:width, min-height, transform;transition-property:width, min-height, transform;-webkit-transition-duration:0s, 0s, 0.5s;transition-duration:0s, 0s, 0.5s;-webkit-transition-delay:0s, 0s, 0s;transition-delay:0s, 0s, 0s;min-height:938px !important;width:100%}
 }
  .plugin-helios-header-footer .helios-special-elements .menu-popup .menu-popup_icon{display:block;text-align:center}
  .plugin-helios-header-footer .helios-special-elements .menu-popup .menu-popup_icon:after,.plugin-helios-header-footer .helios-special-elements .menu-popup .menu-popup_icon:before{color:#646b52;font-size:60px!important}
