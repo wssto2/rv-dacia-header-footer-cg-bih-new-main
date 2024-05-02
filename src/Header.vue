@@ -22,7 +22,7 @@
             <div class="page-header--helios" data-fplugin="menu">
                 <header class="module-container">
                     <div class="header-part brand-logo">
-                        <a href="/" title="Dacia">
+                        <a :href="basicInformation.site_url" :title="basicInformation.site_title">
                             <img src="https://unpkg.com/@wssto2/rv-dacia-header-footer-cg-bih-new-main/dist/img/dacia-logo.svg" alt="Dacia Logo" />
                         </a>
                     </div>
@@ -31,7 +31,7 @@
                     
                         <ul class="main-navigation">
                             <li class="visible-xs visible-sm">
-                                <a class="home" href="/" title="Početna"> <span class="text-uppercase">Početna</span></a>
+                                <a class="home" :href="basicInformation.site_url" title="Početna"> <span class="text-uppercase">Početna</span></a>
                             </li>
                             <Dropdown 
                                 v-for="(navigationItem, itemIndex) in mainNavigation" 
@@ -51,7 +51,7 @@
         
                     <ul class="main-navigation">
                         <li class="visible-xs visible-sm">
-                            <a class="header-icon header-icon-home text-uppercase" href="/"><span>Početna</span></a>
+                            <a class="header-icon header-icon-home text-uppercase" :href="basicInformation.site_url"><span>Početna</span></a>
                         </li>
                         
                         <Dropdown 
@@ -130,6 +130,7 @@
                 expanded: false,
                 mobileDropdown: false,
                 activeCarCategory: null,
+                basicInformation: [],
                 topNavigation: [],                 
                 mainNavigation: []
             }
@@ -151,6 +152,7 @@
             fetchNavigation(apiUri) {
                 axios.get(apiUri)
                     .then((response) => {
+                        this.basicInformation = response.data;
                         this.topNavigation = response.data.top_navigation.schema;
                         this.mainNavigation = response.data.main_navigation.schema;
                     })
